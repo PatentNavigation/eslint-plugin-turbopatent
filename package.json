@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-turbopatent",
+  "version": "0.0.0",
+  "description": "TurboPatent's ESLint plugin for various Javascript environments",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint config lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PatentNavigation/eslint-plugin-turbopatent.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin"
+  ],
+  "author": "Ben Demboski <ben@turbopatent.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatentNavigation/eslint-plugin-turbopatent/issues"
+  },
+  "homepage": "https://github.com/PatentNavigation/eslint-plugin-turbopatent#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1"
+  },
+  "dependencies": {
+    "eslint-plugin-ember-suave": "^1.0.0",
+    "requireindex": "^1.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  }
+}
