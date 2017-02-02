@@ -3,16 +3,18 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
+  /*
   plugins: [
     'ember-suave',
     'turbopatent'
   ],
+  */
   extends: [
+    'eslint:recommended',
     // Ember suave includes a bunch of non-Ember-related rules that we want to
     // use, so we include it here. The Ember-related ones should not have any
     // effect on non-Ember code.
-    'plugin:ember-suave/recommended',
-    'eslint:recommended'
+    'plugin:ember-suave/recommended'
   ],
   env: {
     'es6': true
@@ -57,6 +59,7 @@ module.exports = {
     'operator-linebreak': [ 'error', 'after' ],
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'quotes': 'off',
     'radix': 'error',
     'rest-spread-spacing': 'error',
     'space-before-function-paren': [ 'error', 'never' ],
