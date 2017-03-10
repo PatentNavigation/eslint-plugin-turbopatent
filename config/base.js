@@ -3,18 +3,11 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
-  /*
   plugins: [
-    'ember-suave',
-    'turbopatent'
+    'ember'
   ],
-  */
   extends: [
-    'eslint:recommended',
-    // Ember suave includes a bunch of non-Ember-related rules that we want to
-    // use, so we include it here. The Ember-related ones should not have any
-    // effect on non-Ember code.
-    'plugin:ember-suave/recommended'
+    'eslint:recommended'
   ],
   env: {
     'es6': true
@@ -66,10 +59,16 @@ module.exports = {
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'template-curly-spacing': 'error',
-    'ember-suave/no-const-outside-module-scope': 'off',
-    'ember-suave/prefer-destructuring': [ 'error', {
-      'array': false,
-      'object': true
-    } ]
+
+    // Custom rules
+    'ember/avoid-leaking-state-in-components': 'error',
+    'ember/closure-actions': 'error',
+    'ember/jquery-ember-run': 'error',
+    'ember/local-modules': 'error',
+    'ember/no-empty-attrs': 'error',
+    'ember/no-function-prototype-extensions': 'error',
+    'ember/no-on-calls-in-components': 'error',
+    'ember/no-side-effects': 'error',
+    'ember/use-brace-expansion': 'error'
   }
 };
