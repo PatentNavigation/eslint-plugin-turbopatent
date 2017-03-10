@@ -11,10 +11,9 @@ module.exports = {
   */
   extends: [
     'eslint:recommended',
-    // Ember suave includes a bunch of non-Ember-related rules that we want to
-    // use, so we include it here. The Ember-related ones should not have any
-    // effect on non-Ember code.
-    'plugin:ember-suave/recommended'
+    // Contains only recommended settings for custom rules defined in the
+    // eslint-plugin-ember addon
+    'plugin:ember/base'
   ],
   env: {
     'es6': true
@@ -66,10 +65,18 @@ module.exports = {
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'template-curly-spacing': 'error',
-    'ember-suave/no-const-outside-module-scope': 'off',
-    'ember-suave/prefer-destructuring': [ 'error', {
-      'array': false,
-      'object': true
-    } ]
+
+    // Custom rules
+    'ember/alias-model-in-controller': 'off',
+    'ember/closure-actions': 'error',
+    'ember/named-functions-in-promises': 'off',
+    'ember/no-observers': 'off',
+    'ember/order-in-routes': 'off',
+    'ember/order-in-models': 'off',
+    'ember/order-in-controllers': 'off',
+    'ember/order-in-components': 'off',
+    'ember/routes-segments-snake-case': 'off',
+    'ember/use-ember-get-and-set': 'off',
+    'ember/use-brace-expansion': 'error'
   }
 };
