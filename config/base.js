@@ -3,17 +3,11 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
-  /*
   plugins: [
-    'ember-suave',
-    'turbopatent'
+    'ember'
   ],
-  */
   extends: [
-    'eslint:recommended',
-    // Contains only recommended settings for custom rules defined in the
-    // eslint-plugin-ember addon
-    'plugin:ember/base'
+    'eslint:recommended'
   ],
   env: {
     'es6': true
@@ -67,16 +61,14 @@ module.exports = {
     'template-curly-spacing': 'error',
 
     // Custom rules
-    'ember/alias-model-in-controller': 'off',
+    'ember/avoid-leaking-state-in-components': 'error',
     'ember/closure-actions': 'error',
-    'ember/named-functions-in-promises': 'off',
-    'ember/no-observers': 'off',
-    'ember/order-in-routes': 'off',
-    'ember/order-in-models': 'off',
-    'ember/order-in-controllers': 'off',
-    'ember/order-in-components': 'off',
-    'ember/routes-segments-snake-case': 'off',
-    'ember/use-ember-get-and-set': 'off',
+    'ember/jquery-ember-run': 'error',
+    'ember/local-modules': 'error',
+    'ember/no-empty-attrs': 'error',
+    'ember/no-function-prototype-extensions': 'error',
+    'ember/no-on-calls-in-components': 'error',
+    'ember/no-side-effects': 'error',
     'ember/use-brace-expansion': 'error'
   }
 };
