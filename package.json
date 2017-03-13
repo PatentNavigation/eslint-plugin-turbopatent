@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/PatentNavigation/eslint-plugin-turbopatent.git"
   },
+  "engines": {
+    "node": ">= 6.9.0"
+  },
   "keywords": [
     "eslint",
     "eslint-plugin",
