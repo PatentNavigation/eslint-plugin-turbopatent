@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/PatentNavigation/eslint-plugin-turbopatent#readme",
   "devDependencies": {
-    "eslint": "^3.14.1"
+    "eslint": "^3.14.1",
+    "git-release": "^0.6.0",
+    "minimist": "^1.2.0"
   },
   "dependencies": {
     "eslint-plugin-ember": "3.0.2",
