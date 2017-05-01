@@ -44,6 +44,7 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'no-unused-vars': [ 'error', { vars: 'all', args: 'none' } ],
+    'no-use-before-define': [ 'error', { 'functions': false } ],
     'no-var': 'error',
     'no-whitespace-before-property': 'error',
     'object-curly-spacing': [ 'error', 'always' ],
