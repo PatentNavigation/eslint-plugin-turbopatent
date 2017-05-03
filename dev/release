@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 'use strict';
 
-var execSync = require('child_process').execSync;
-var extend = require('util')._extend;
-var repo = require('../package.json').repository;
+let execSync = require('child_process').execSync;
+let extend = require('util')._extend;
+let repository = require('../package.json').repository;
+repository = repository.url ? repository.url : repository;
+// ensure we have an https url to the repo
+repository = repository.replace(/.+(?=github[.]com)/, 'https://');
+// omit '.git' at the end of the repo url
+repository = repository.replace(/[.]git$/, '');
 
 execSync("./node_modules/.bin/release", {
   stdio: 'inherit',
@@ -11,15 +16,15 @@ execSync("./node_modules/.bin/release", {
   env: extend({ 'ALLOW_MASTER': 1 }, process.env)
 });
 
-var tags = execSync("git tag -l --sort v:refname").toString().trim().split('\n').filter(function(tag) {
+let tags = execSync("git tag -l --sort v:refname").toString().trim().split('\n').filter(function(tag) {
   return tag[0] === 'v';
 });
-var prevVersion = tags[tags.length - 2];
-var newVersion = tags[tags.length - 1];
+let prevVersion = tags[tags.length - 2];
+let newVersion = tags[tags.length - 1];
 
-var changelog = execSync("./dev/changelog " + prevVersion + " " + newVersion, {
-  stdio: ['pipe', 'pipe', process.stderr]
+let changelog = execSync(`./dev/changelog ${prevVersion} ${newVersion}`, {
+  stdio: [ 'pipe', 'pipe', process.stderr ]
 }).toString();
 
-console.log("\nVersion tagged! Now paste changelog into " + repo + "/releases/edit/" + newVersion + ":\n");
+console.log(`\nVersion tagged! Now paste changelog into ${repository}/releases/edit/${newVersion}:\n`);
 console.log(changelog);
