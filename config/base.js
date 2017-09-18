@@ -67,6 +67,7 @@ module.exports = {
     'ember/closure-actions': 'error',
     'ember/jquery-ember-run': 'error',
     'ember/local-modules': 'error',
+    'ember/new-module-imports': 'error',
     'ember/no-empty-attrs': 'error',
     'ember/no-function-prototype-extensions': 'error',
     'ember/no-on-calls-in-components': 'error',
