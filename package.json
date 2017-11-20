@@ -32,7 +32,7 @@
     "minimist": "^1.2.0"
   },
   "dependencies": {
-    "eslint-plugin-ember": "^4.5.0",
+    "eslint-plugin-ember": "^5.0.0",
     "requireindex": "^1.1.0"
   },
   "peerDependencies": {
