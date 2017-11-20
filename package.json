@@ -34,8 +34,5 @@
   "dependencies": {
     "eslint-plugin-ember": "^5.0.0",
     "requireindex": "^1.1.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=0.8.0"
   }
 }
