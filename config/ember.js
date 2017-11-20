@@ -10,9 +10,6 @@ module.exports = {
     'new-cap': [ 'error', { 'capIsNewExceptions': [ 'A' ] } ],
 
     // Custom rules
-    'ember/avoid-leaking-state-in-components': 'error',
-    'ember/local-modules': 'error',
-    'ember/no-empty-attrs': 'error',
-    'ember/no-global-jquery': 'off'
+    'ember/no-empty-attrs': 'error'
   }
 };
