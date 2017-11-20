@@ -10,6 +10,11 @@ module.exports = {
     'new-cap': [ 'error', { 'capIsNewExceptions': [ 'A' ] } ],
 
     // Custom rules
-    'ember/no-empty-attrs': 'error'
+    'ember/no-empty-attrs': 'error',
+    // We actually do not want to turn this rule off. However,
+    // the current rule has a bug. This rule does not take into
+    // account the new module import syntax. Until this is fixed,
+    // this rule should be turned off.
+    'ember/no-global-jquery': 'off'
   }
 };
