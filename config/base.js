@@ -3,9 +3,6 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: [
-    'ember'
-  ],
   extends: [
     'eslint:recommended'
   ],
@@ -60,18 +57,6 @@ module.exports = {
     'space-before-function-paren': [ 'error', 'never' ],
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
-    'template-curly-spacing': 'error',
-
-    // Custom rules
-    'ember/avoid-leaking-state-in-components': 'error',
-    'ember/closure-actions': 'error',
-    'ember/jquery-ember-run': 'error',
-    'ember/local-modules': 'error',
-    'ember/new-module-imports': 'error',
-    'ember/no-empty-attrs': 'error',
-    'ember/no-function-prototype-extensions': 'error',
-    'ember/no-on-calls-in-components': 'error',
-    'ember/no-side-effects': 'error',
-    'ember/use-brace-expansion': 'error'
+    'template-curly-spacing': 'error'
   }
 };
