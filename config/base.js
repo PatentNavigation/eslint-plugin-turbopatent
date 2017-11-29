@@ -54,7 +54,11 @@ module.exports = {
     'radix': 'error',
     'rest-spread-spacing': 'error',
     'semi': [ 'error', 'always' ],
-    'space-before-function-paren': [ 'error', 'never' ],
+    'space-before-function-paren': [ 'error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always'
+    } ],
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'template-curly-spacing': 'error'
