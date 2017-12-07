@@ -59,6 +59,7 @@ module.exports = {
       'named': 'never',
       'asyncArrow': 'always'
     } ],
+    'space-before-blocks': 'error',
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'template-curly-spacing': 'error'
