@@ -5,5 +5,11 @@ module.exports = {
   },
   globals: {
     'requireNode': true
+  },
+  plugins: [
+    'no-only-tests'
+  ],
+  rules: {
+    "no-only-tests/no-only-tests": 2
   }
 };

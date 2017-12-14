@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "eslint-plugin-ember": "^5.0.1",
+    "eslint-plugin-no-only-tests": "^2.0.0",
     "requireindex": "^1.1.0"
   }
 }
