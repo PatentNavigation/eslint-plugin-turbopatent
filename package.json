@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-turbopatent",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "TurboPatent's ESLint plugin for various Javascript environments",
   "main": "lib/index.js",
   "scripts": {
