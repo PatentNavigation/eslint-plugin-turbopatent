@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "eslint-plugin-ember": "^5.0.2",
-    "eslint-plugin-no-only-tests": "^2.0.0",
+    "eslint-plugin-no-only-tests": "git+ssh://git@github.com/bendemboski/eslint-plugin-no-only-tests.git#6fde3db7cb547c600a12abbf486f3bee3a49fcf2",
     "requireindex": "^1.1.0"
   }
 }
