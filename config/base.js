@@ -1,14 +1,10 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module'
-  },
+  plugins: [
+    'no-only-tests'
+  ],
   extends: [
     'eslint:recommended'
   ],
-  env: {
-    'es6': true
-  },
   rules: {
     'array-bracket-spacing': [ 'error', 'always' ],
     'arrow-parens': 'error',
@@ -26,7 +22,6 @@ module.exports = {
     'func-call-spacing': 'error',
     'indent': [ 'error', 2 ],
     'keyword-spacing': [ 'error', { 'before': true, 'after': true } ],
-    'new-cap': 'error',
     'new-parens': 'error',
     'no-duplicate-imports': 'error',
     'no-global-assign': 'error',
@@ -62,6 +57,8 @@ module.exports = {
     'space-before-blocks': 'error',
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
-    'template-curly-spacing': 'error'
+    'template-curly-spacing': 'error',
+
+    'no-only-tests/no-only-tests': 2
   }
 };

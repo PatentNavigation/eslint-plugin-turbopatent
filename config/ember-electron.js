@@ -6,10 +6,25 @@ module.exports = {
   globals: {
     'requireNode': true
   },
-  plugins: [
-    'no-only-tests'
-  ],
-  rules: {
-    "no-only-tests/no-only-tests": 2
-  }
+  overrides: [
+    {
+      files: [ 'ember-electron/**/*.js' ],
+      env: {
+        browser: false
+      }
+    },
+    {
+      files: [ 'ember-electron-tests/**/*.js' ],
+      env: {
+        browser: false,
+        mocha: true
+      }
+    },
+    {
+      files: [ 'testem-electron.js' ],
+      rules: {
+        'camelcase': 'off'
+      }
+    }
+  ]
 };
