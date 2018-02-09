@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint config lib",
-    "release": "dev/release"
+    "release": "tp-release"
   },
   "repository": {
     "type": "git",
@@ -28,8 +28,7 @@
   "homepage": "https://github.com/PatentNavigation/eslint-plugin-turbopatent#readme",
   "devDependencies": {
     "eslint": "^4.7.1",
-    "git-release": "^0.6.0",
-    "minimist": "^1.2.0"
+    "tom-jumbo-grumbo": "git+ssh://git@github.com/PatentNavigation/tom-jumbo-grumbo.git#v1.0.2"
   },
   "dependencies": {
     "eslint-plugin-ember": "^5.0.2",
