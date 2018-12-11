@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/PatentNavigation/eslint-plugin-turbopatent#readme",
   "devDependencies": {
-    "eslint": "^4.7.1",
+    "eslint": "^5.10.0",
     "tom-jumbo-grumbo": "git+ssh://git@github.com/PatentNavigation/tom-jumbo-grumbo.git#v1.0.2"
   },
   "dependencies": {
-    "eslint-plugin-ember": "^5.0.2",
-    "eslint-plugin-no-only-tests": "^2.0.1",
-    "requireindex": "^1.1.0"
+    "eslint-plugin-ember": "^6.0.1",
+    "eslint-plugin-no-only-tests": "^2.1.0",
+    "requireindex": "^1.2.0"
   }
 }
