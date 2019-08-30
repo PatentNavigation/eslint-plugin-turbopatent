@@ -4,8 +4,8 @@
   "description": "TurboPatent's ESLint plugin for various Javascript environments",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint config lib",
+    "test": "yarn lint",
+    "lint": "eslint .",
     "release": "tp-release"
   },
   "repository": {
