@@ -7,7 +7,7 @@ jobs:
   build:
     working_directory: ~/eslint-plugin-turbopatent
     docker:
-      - image: circleci/node:6-stretch
+      - image: circleci/node:12-stretch
     steps:
       - checkout
       - restore_cache:
