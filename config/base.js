@@ -1,9 +1,11 @@
 module.exports = {
   plugins: [
-    'no-only-tests'
+    'no-only-tests',
+    'qunit'
   ],
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:qunit/recommended'
   ],
   rules: {
     'array-bracket-spacing': [ 'error', 'always' ],
@@ -59,6 +61,9 @@ module.exports = {
     'space-infix-ops': 'error',
     'template-curly-spacing': 'error',
 
-    'no-only-tests/no-only-tests': 2
+    'no-only-tests/no-only-tests': 'error',
+
+    'qunit/no-ok-equality': 'off',
+    'qunit/require-expect': 'off'
   }
 };
