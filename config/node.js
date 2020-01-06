@@ -1,5 +1,9 @@
 module.exports = {
-  extends: require.resolve('./base.js'),
+  plugins: [ 'node' ],
+  extends: [
+    'plugin:node/recommended',
+    require.resolve('./base.js')
+  ],
   env: {
     'node': true
   }
