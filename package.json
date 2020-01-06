@@ -33,6 +33,7 @@
   "dependencies": {
     "eslint-plugin-ember": "^7.0.0",
     "eslint-plugin-no-only-tests": "^2.4.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-qunit": "^4.0.0",
     "requireindex": "^1.2.0"
   }
