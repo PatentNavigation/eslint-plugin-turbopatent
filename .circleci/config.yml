@@ -21,3 +21,9 @@ jobs:
           paths:
             - node_modules
       - run: yarn test
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - build
