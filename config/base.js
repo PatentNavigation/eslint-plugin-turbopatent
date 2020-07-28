@@ -37,7 +37,7 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
-    'no-unused-vars': [ 'error', { vars: 'all', args: 'none' } ],
+    'no-unused-vars': [ 'error', { vars: 'all', args: 'none', ignoreRestSiblings: true } ],
     'no-use-before-define': [ 'error', { 'functions': false, 'classes': false } ],
     'no-var': 'error',
     'no-whitespace-before-property': 'error',
